@@ -21,16 +21,6 @@ class Engine extends Conversion {
          return string;
     }
 
-    static void calc1(String expression) {
-        try {
-            double result = (double) new ScriptEngineManager().getEngineByName("JavaScript").eval(expression);
-            System.out.println(result);
-        } catch (Exception ex) {
-            try (PrintStream stream = err.append(" Ошибка! Введены некорректные данные!")) {
-            }
-         }
-    }
-
     static void calc2(String expression, Object ... args){
         try {
             System.out.println(
@@ -38,7 +28,7 @@ class Engine extends Conversion {
                     Arrays.asList("multiply", "add", "subtract", "divide").get(
                         (Integer)(args = new Object[]{
                              args = new Object[]{
-                                Pattern.compile("\\s*(\\d|[10]{2})\\s*([+-\\\\*/])\\s*(\\d|[10]{2})\\s*$").
+                                Pattern.compile("(^[0-9]|(?:10))\\s*([\\+\\*\\/-])\\s*([0-9]$|(?:10)$)").
                                 matcher(expression)
                                 },
                              args[0],
@@ -55,9 +45,8 @@ class Engine extends Conversion {
                 )
             );
         }catch (Exception e){
-            /*try (PrintStream stream = err.append(" Ошибка! Введены некорректные данные!")) {
-            }*/
-            System.out.println(e);
+            try (PrintStream stream = err.append(" Ошибка! Введены данные, несоответствующие условиям!")) {
+            }
         }
     }
 
