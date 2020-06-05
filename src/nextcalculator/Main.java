@@ -1,5 +1,9 @@
 package nextcalculator;
 
+import java.io.PrintStream;
+
+import static java.lang.System.err;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("\t\t\tПростой консольный калькулятор.");
@@ -11,15 +15,16 @@ public class Main {
                 "или с римскими (I,II,III,IV,V…) цифрами.");
         System.out.println();
         System.out.println("\t\tВведите действие:");
-//        Engine.getLine();
-        /*Conversion.parsingLine(" ");*/
-        Engine.calc2(Engine.getLine());
-//        System.out.println(Engine.getLine());
-//        String line = Calculator.getLine();
-//        Calculator.calc(line);
-//        Calculator.defineAll(line);
-//        Calculator.getInt(line);
-//        Calculator.parsingString(line);
-//        Calculator.show(line);
+
+        String line = Conversion.getLine();
+        try {
+            Conversion.parsingExpression(line);
+        } catch (Exception e) {
+            try (PrintStream stream = err.append(" УПС!!! Ошибка! Введены некорректные данные!")) {
+            }
+        }
+
+        Calculation calc = new Calculation();
+        calc.calc();
     }
 }
