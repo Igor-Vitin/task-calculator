@@ -21,14 +21,16 @@ class Conversion {
     static void parsingExpression(String expression) {
         Pattern romanPattern = Pattern.compile(romPattern);
         Matcher matchRom = romanPattern.matcher(expression);
+        Pattern arabicPattern = Pattern.compile(arabPattern);
+        Matcher matchArab = arabicPattern.matcher(expression);
         if (matchRom.matches()) {
             statement = matchRom;
             itIsRoman = true;
-        }
-        Pattern arabicPattern = Pattern.compile(arabPattern);
-        Matcher matchArab = arabicPattern.matcher(expression);
-        if (matchArab.matches()) {
+        } else if (matchArab.matches()) {
             statement = matchArab;
+        } else {
+            try (PrintStream stream = err.append(" УПС!!! Ошибка! Введены данные, несоответствующие условиям!")) {
+            }
         }
     }
 
@@ -69,7 +71,6 @@ class Conversion {
                 default:
                     try (PrintStream stream = err.append(" УПС!!! Ошибка! Введены данные, несоответствующие условиям!")) {
                     }
-                    ;
                     break;
             }
         }
