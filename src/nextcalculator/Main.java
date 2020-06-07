@@ -1,10 +1,7 @@
 package nextcalculator;
 
-import java.io.PrintStream;
-
-import static java.lang.System.err;
-
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("\t\t\tПростой консольный калькулятор.");
         System.out.println("Калькулятор выполняет простые операции: сложения, вычитания, умножения и деления с двумя числами, \n" +
@@ -16,14 +13,7 @@ public class Main {
         System.out.println();
         System.out.println("\t\tВведите действие:");
 
-        String line = Conversion.getLine();
-        try {
-            Conversion.parsingExpression(line);
-        } catch (Exception e) {
-            try (PrintStream stream = err.append(" УПС!!! Ошибка! Введены некорректные данные!")) {
-            }
-        }
-
+        Conversion.parsingExpression(Conversion.getLine());
         Calculation calc = new Calculation();
         calc.calc();
     }

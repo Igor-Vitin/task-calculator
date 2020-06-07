@@ -8,10 +8,10 @@ import java.util.regex.Pattern;
 import static java.lang.System.err;
 
 class Conversion {
-    static String romPattern = "(X?|I[XV]|V?I{0,3})\\s*([\\+\\*\\/-])\\s*(X?|I[XV]|V?I{0,3})";
-    static String arabPattern = "(^[0-9]|(?:10))\\s*([\\+\\*\\/-])\\s*([0-9]$|(?:10)$)";
+    private static String romPattern = "(X?|I[XV]|V?I{0,3})\\s*([\\+\\*\\/-])\\s*(X?|I[XV]|V?I{0,3})";
+    private static String arabPattern = "(^[0-9]|(?:10))\\s*([\\+\\*\\/-])\\s*([0-9]$|(?:10)$)";
     static Matcher statement;
-    static boolean itIsRoman = false;
+    private static boolean itIsRoman = false;
 
     static String getLine() {
         String expression = new Scanner(System.in).nextLine();
