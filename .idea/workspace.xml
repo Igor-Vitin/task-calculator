@@ -26,12 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b2ddf26-1acd-4b19-8633-65fff58a2e33" name="Default Changelist" comment="Corrected and supplemented the latest version">
-      <change afterPath="$PROJECT_DIR$/src/nextcalculator/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore_duble" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nextcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nextcalculator/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591505392413</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Corrected and supplemented the latest version">
+      <created>1602917185021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602917185021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,10 +237,10 @@
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
     <state x="148" y="86" key="SettingsEditor/0.0.1280.1024@0.0.1280.1024" timestamp="1602911926111" />
-    <state x="232" y="244" key="Vcs.Push.Dialog.v2" timestamp="1602915675082">
+    <state x="232" y="244" key="Vcs.Push.Dialog.v2" timestamp="1602917217477">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state x="232" y="244" key="Vcs.Push.Dialog.v2/0.0.1280.1024@0.0.1280.1024" timestamp="1602915675082" />
+    <state x="232" y="244" key="Vcs.Push.Dialog.v2/0.0.1280.1024@0.0.1280.1024" timestamp="1602917217477" />
   </component>
   <component name="masterDetails">
     <states>
