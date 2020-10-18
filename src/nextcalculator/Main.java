@@ -7,7 +7,9 @@ public class Main {
         Description.show();
 
         Conversion.parsingExpression(Conversion.getLine());
+
         Calculation calc = new Calculation();
         calc.calc();
+        calc.showResult();
     }
 }

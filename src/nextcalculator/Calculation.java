@@ -6,28 +6,37 @@ import static java.lang.System.err;
 
 class Calculation extends Conversion {
 
-    private int num1 = fromRomanToArab(statement.group(1));
-    private String action = statement.group(2);
-    private int num2 = fromRomanToArab(statement.group(3));
-
+    private final int num1 = fromRomanToArab(statement.group(1));
+    private final String action = statement.group(2);
+    private final int num2 = fromRomanToArab(statement.group(3));
+    private String result = "";
 
     void calc() {
         switch (action) {
             case "+":
-                System.out.println("Результат: " + (num1 + num2));
+                result = String.valueOf((num1 + num2));
                 break;
             case "*":
-                System.out.println("Результат: " + (num1 * num2));
+                result = String.valueOf((num1 * num2));
                 break;
             case "/":
-                System.out.println("Результат: " + ((double) (num1) / num2));
+                result = String.valueOf((double) (num1) / num2);
                 break;
             case "-":
-                System.out.println("Результат: " + (num1 - num2));
+                result = String.valueOf((num1 - num2));
                 break;
             default:
-               try(PrintStream stream = err.append(" УПС!!! Ошибка! Используется операция, несоответствующая условиям!")) {}
+               try(PrintStream ignored = err.append(" УПС!!! Ошибка! Используется операция, несоответствующая условиям!")){}
                 break;
+        }
+    }
+
+    void showResult(){
+        if(!itIsRoman){
+            System.out.println("Результат: " + result);
+        }else {
+            String outcome = convertArabToRom(result);
+            System.out.println("Результат: " + outcome);
         }
     }
 }

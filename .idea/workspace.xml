@@ -25,8 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2ddf26-1acd-4b19-8633-65fff58a2e33" name="Default Changelist" comment="Corrected and supplemented the latest version">
+    <list default="true" id="2b2ddf26-1acd-4b19-8633-65fff58a2e33" name="Default Changelist" comment="got rid of the extra variable 'task'">
+      <change beforePath="$PROJECT_DIR$/.gitignore_old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Conversion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Conversion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorForMentor/nextcalculator/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nextcalculator/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nextcalculator/Calculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nextcalculator/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nextcalculator/Conversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nextcalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nextcalculator/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +71,16 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor\src\nextcalculator" />
-      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor\src\test" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="nextcalculator" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\WORKSPACES\Java_WorkSpaces\forMentor\task-calculator\src\draft" />
+      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor\src\nextcalculator" />
+      <recent name="C:\WORKSPACES\Java_Workspace\forJavaMentor\src\test" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,7 +89,7 @@
       <module name="CalculatorForMentor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nextcalculator.*" />
+          <option name="PATTERN" value="draft.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602917185021</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="got rid of the extra variable 'task'">
+      <created>1602917757838</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602917757838</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,13 +212,18 @@
     <MESSAGE value="Finished the assignment completely" />
     <MESSAGE value="Correct error handling" />
     <MESSAGE value="Corrected and supplemented the latest version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected and supplemented the latest version" />
+    <MESSAGE value="got rid of the extra variable 'task'" />
+    <option name="LAST_COMMIT_MESSAGE" value="got rid of the extra variable 'task'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="152" key="#Plugins" timestamp="1602911463318">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
     <state x="232" y="152" key="#Plugins/0.0.1280.1024@0.0.1280.1024" timestamp="1602911463318" />
+    <state x="410" y="313" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602965630577">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="410" y="313" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.1024@0.0.1280.1024" timestamp="1602965630577" />
     <state x="445" y="212" key="#com.intellij.ide.util.MemberChooser" timestamp="1602913987287">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
@@ -217,30 +236,44 @@
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
     <state x="92" y="92" width="1096" height="840" key="DiffContextDialog/0.0.1280.1024@0.0.1280.1024" timestamp="1602915429233" />
-    <state width="1236" height="218" key="GridCell.Tab.0.bottom" timestamp="1602914518242">
+    <state width="1236" height="218" key="GridCell.Tab.0.bottom" timestamp="1602980406772">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1236" height="218" key="GridCell.Tab.0.bottom/0.0.1280.1024@0.0.1280.1024" timestamp="1602914518242" />
-    <state width="1236" height="218" key="GridCell.Tab.0.center" timestamp="1602914518242">
+    <state width="1236" height="218" key="GridCell.Tab.0.bottom/0.0.1280.1024@0.0.1280.1024" timestamp="1602980406772" />
+    <state width="1236" height="218" key="GridCell.Tab.0.center" timestamp="1602980406772">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1236" height="218" key="GridCell.Tab.0.center/0.0.1280.1024@0.0.1280.1024" timestamp="1602914518242" />
-    <state width="1236" height="218" key="GridCell.Tab.0.left" timestamp="1602914518242">
+    <state width="1236" height="218" key="GridCell.Tab.0.center/0.0.1280.1024@0.0.1280.1024" timestamp="1602980406772" />
+    <state width="1236" height="218" key="GridCell.Tab.0.left" timestamp="1602980406771">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1236" height="218" key="GridCell.Tab.0.left/0.0.1280.1024@0.0.1280.1024" timestamp="1602914518242" />
-    <state width="1236" height="218" key="GridCell.Tab.0.right" timestamp="1602914518242">
+    <state width="1236" height="218" key="GridCell.Tab.0.left/0.0.1280.1024@0.0.1280.1024" timestamp="1602980406771" />
+    <state width="1236" height="218" key="GridCell.Tab.0.right" timestamp="1602980406772">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1236" height="218" key="GridCell.Tab.0.right/0.0.1280.1024@0.0.1280.1024" timestamp="1602914518242" />
+    <state width="1236" height="218" key="GridCell.Tab.0.right/0.0.1280.1024@0.0.1280.1024" timestamp="1602980406772" />
     <state x="148" y="86" key="SettingsEditor" timestamp="1602911926111">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
     <state x="148" y="86" key="SettingsEditor/0.0.1280.1024@0.0.1280.1024" timestamp="1602911926111" />
-    <state x="232" y="244" key="Vcs.Push.Dialog.v2" timestamp="1602917217477">
+    <state x="232" y="244" key="Vcs.Push.Dialog.v2" timestamp="1602917785435">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state x="232" y="244" key="Vcs.Push.Dialog.v2/0.0.1280.1024@0.0.1280.1024" timestamp="1602917217477" />
+    <state x="232" y="244" key="Vcs.Push.Dialog.v2/0.0.1280.1024@0.0.1280.1024" timestamp="1602917785435" />
+    <state x="174" y="247" width="931" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1602977544745">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="174" y="247" width="931" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.1024@0.0.1280.1024" timestamp="1602977544745" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
